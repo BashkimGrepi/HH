@@ -1,0 +1,13 @@
+.john-Donne {
+    border-radius: 25%;
+    
+    top: 0;
+    right: 0;
+    width: 400px;
+  }
+  
+  button:hover {
+    background-color: #16522b;
+    color: white;
+    border: radius 25%;
+  }

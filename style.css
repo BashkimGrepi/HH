@@ -1,72 +1,80 @@
-
 body{
-  background-color: rgb(245, 245, 230);
+  background-color: rgb(214, 214, 210);
+  margin: 0;
+  padding: 0;
 }
 
 /* this is a name selector */
 nav{
-  background-color: rgb(204, 255, 255);
+  background-color: rgb(30, 31, 31);
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: smaller;
   
 }
 
-p{
- 
+h1{
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div p{
   font-style: italic;
-  a{
-    color: rgb(34, 34, 34);
-    &:hover{
-      font-weight: bold;
-    }
-  }
+  text-align: center;
+
 }
 
 /* this is a class selector */
 .img{
   background-image: url("images/Edgar-Allan-Poe.webp");
   background-repeat: no-repeat;
-  p{
-    color: rgb(252, 252, 249);
-    text-transform: capitalize;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-  }
+  background-position: right;
+  background-size: cover;
+  width: 60%;
+  height: 60%;
+}
+
+/* this affects paragraph only inside this class img */
+.img p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
   
- 
+  
+}
+
+p a{
+  &&:hover{
+    font-weight: bold;
+  }
 }
 
 .poems{
-  h2{
-    text-transform: uppercase;
-    text-decoration: dotted;
-    font-size: medium;
-    text-align: center;
-  }
-  ul{
-    a{
-      text-decoration: none;
-      color: rgb(172, 35, 35);
-      &:hover{
-        font-weight: bold;
-      }
-    }
-    display: flex;
-    justify-content: space-between;
-  }
+  padding-left: 2em;
+
 }
 
-footer{
-    p{
-      padding-left: 5px;
-      margin-left: 100px;
-    }
+.poems h2{
+  font-size:large;
+}
 
-  table{
-    text-align: center;
-    padding-left: 5px;
+ul li{
+  display: inline-block;
+  
+  
+}
+
+li a{
+  text-decoration: none;
+  color: black;
+  &&:hover{
+    font-weight: bold;
+    color: rgb(43, 56, 66);
+    
   }
-
-
+ 
+}
+footer{
+  padding-left: 1em;
 }
